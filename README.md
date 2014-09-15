@@ -22,3 +22,8 @@ Bridge in and out of Ripple via Astropay and its banking APIs.
       gatewayd.processes.add(astropayPlugin.processes.outToAstropay);
     }
 
+### Astropay API Documentation
+
+"Streamline" API -- payments to merchants -- "inbound bridge"
+
+    https://merchant.astropay.com/downloads/AstroPay_STREAMLINE_API.pdf
