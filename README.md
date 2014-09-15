@@ -13,7 +13,9 @@ Bridge in and out of Ripple via Astropay and its banking APIs.
 
     module.exports = function(gatewayd) {
       var astropayPlugin = new AstropayPlugin({
-        gatewayd: gatewayd
+        gatewayd: gatewayd,
+        merchantId: gatewayd.config.get('ASTROPAY').merchantId,
+        apiKey: gatewayd.config.get('ASTROPAY').apiKey
       });
        
       gatewayd.server.use('/astropay', astropayPlugin.router);
