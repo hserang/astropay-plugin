@@ -1,0 +1,24 @@
+{
+  "name": "gatewayd-astropay",
+  "version": "0.0.1",
+  "description": "A bridge in and out of Ripple via Astropay",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gatewayd/astropay-plugin.git"
+  },
+  "keywords": [
+    "gatewayd",
+    "astropay",
+    "banking"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gatewayd/astropay-plugin/issues"
+  },
+  "homepage": "https://github.com/gatewayd/astropay-plugin"
+}
