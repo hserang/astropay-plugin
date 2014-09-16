@@ -13,34 +13,6 @@ describe('Astropay Invoice', function() {
   
   });
 
-  it('should map required fields to Astropay fields',  function() {
-
-    invoice = new Astropay.Invoice({
-      amount: 199.95,
-      currency: 'USD',
-      bank: 'BB',
-      country: 'BR',
-      description: 'Hello, this is a description',
-      iduser: 'Userivan123',
-      cpf: '123456789',
-      name: 'Ivan Lolivier',
-      email: 'ivan@astropaycard.com',
-      bdate: '19851908'
-    });
-
-    var formatted = invoice.formatRequest(); 
-    assert.strictEqual(formatted.x_amount, invoice.amount);
-    assert.strictEqual(formatted.x_currency, invoice.currency);
-    assert.strictEqual(formatted.x_bank, invoice.bank);
-    assert.strictEqual(formatted.x_country, invoice.country);
-    assert.strictEqual(formatted.x_description, invoice.description);
-    assert.strictEqual(formatted.x_iduser, invoice.iduser);
-    assert.strictEqual(formatted.x_cpf, invoice.cpf);
-    assert.strictEqual(formatted.x_name, invoice.name);
-    assert.strictEqual(formatted.x_email, invoice.email);
-    assert.strictEqual(formatted.x_bdate, invoice.bdate);
-  });
-
   it('should map optional required fields to Astropay fields',  function() {
     invoice = new Astropay.Invoice({
       address: 'Bonavita 1225',
